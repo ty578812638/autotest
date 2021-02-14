@@ -52,7 +52,6 @@ def exe_test_case(case_file_name=''):
         product_raw_html_report = os.path.join(
             settings.product_raw_html_report,case_file_name+'_testReport_'+ cur_time+ '.html').replace('\\','/')
 
-
     else:
         #执行所有测试用例
         case_path = settings.case_root_path
@@ -64,22 +63,15 @@ def exe_test_case(case_file_name=''):
         raise OSError(f'用例路径【{case_path}】不存在' )
 
 
-    # 切换到项目根路径
-    project_root_path = os.path.dirname(os.path.dirname(__file__)).replace('\\', '/')
-    os.chdir(project_root_path)
-
-    os.system( f'pytest -s -n auto  -v {case_path}  --html={product_raw_html_report} --self-contained-html --alluredir={settings.product_allure_html_report} --clean-alluredir')
-
-
-    os.system(f'allure generate {settings.product_allure_json_report} -o {settings.product_allure_html_report} --clean')
-
+    os.system( f' pytest -s -n auto  -v {case_path}  --html={product_raw_html_report} --self-contained-html --alluredir={settings.product_allure_json_report} --clean-alluredir')
     get_test_report(product_raw_html_report)
 
-    os.system(f'allure open {settings.test_allure_html_report}')
-    #
+    time.sleep(5)
 
+    print('ok')
 
-
+    os.system(f'allure generate {settings.product_allure_json_report} -o {settings.product_allure_html_report} --clean')
+    os.system(f'allure open {settings.product_allure_html_report}')
 
 if __name__ == '__main__':
     try:
