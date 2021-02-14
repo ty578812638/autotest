@@ -1,0 +1,91 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "children" : [ {
+        "name" : "test_allure_20",
+        "uid" : "92b2a396660bcb9e",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287743936,
+          "stop" : 1613287743937,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "测试allure title怎么展示",
+        "uid" : "7986288fe8e20736",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287743936,
+          "stop" : 1613287743937,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_30",
+        "uid" : "8e8b5b3c14198db4",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287744025,
+          "stop" : 1613287744026,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_40",
+        "uid" : "e9dc6cd62a818ec7",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287744031,
+          "stop" : 1613287744031,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_50",
+        "uid" : "8bfda0ff0623714d",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287744064,
+          "stop" : 1613287744064,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_60",
+        "uid" : "ee34f732de80008f",
+        "parentUid" : "86fe3ff827eaa86b6639e145a2ca66b6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1613287744068,
+          "stop" : 1613287744069,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "86fe3ff827eaa86b6639e145a2ca66b6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

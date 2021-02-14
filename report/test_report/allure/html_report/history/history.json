@@ -1,0 +1,122 @@
+{
+  "29345e4cf8033c625e70f9aa13d9118a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ee34f732de80008f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287744068,
+        "stop" : 1613287744069,
+        "duration" : 1
+      }
+    } ]
+  },
+  "c4c9adcfa9f6449843b951f112427701" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e9dc6cd62a818ec7",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287744031,
+        "stop" : 1613287744031,
+        "duration" : 0
+      }
+    } ]
+  },
+  "3d5f0c3dbb56617ae6a046cce44aa939" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7986288fe8e20736",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287743936,
+        "stop" : 1613287743937,
+        "duration" : 1
+      }
+    } ]
+  },
+  "0134f84ae910d11f0f64ae6fd6dd3494" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8e8b5b3c14198db4",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287744025,
+        "stop" : 1613287744026,
+        "duration" : 1
+      }
+    } ]
+  },
+  "69f45c796beb1ed6210f90e3e6ac965e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "92b2a396660bcb9e",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287743936,
+        "stop" : 1613287743937,
+        "duration" : 1
+      }
+    } ]
+  },
+  "65d38cce5fad730360f2095f04d074c5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8bfda0ff0623714d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'config.settings' has no attribute 'web_server_host'",
+      "time" : {
+        "start" : 1613287744064,
+        "stop" : 1613287744064,
+        "duration" : 0
+      }
+    } ]
+  }
+}

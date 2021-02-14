@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Feb 14 15:29:04 CST 2021","Sun Feb 14 15:29:04 CST 2021","0","cases.system.AF.8041","test_21","TestAllureAC","","","test_allure_50",""
+"broken","Sun Feb 14 15:29:03 CST 2021","Sun Feb 14 15:29:03 CST 2021","1","cases.system.AF.8041","test_21","TestAllureAC","","","test_allure_20","测试allure description 怎么展示"
+"broken","Sun Feb 14 15:29:04 CST 2021","Sun Feb 14 15:29:04 CST 2021","1","cases.system.AF.8041","test_21","TestAllureAC","","","test_allure_60",""
+"broken","Sun Feb 14 15:29:04 CST 2021","Sun Feb 14 15:29:04 CST 2021","0","cases.system.AF.8041","test_21","TestAllureAC","","","test_allure_40",""
+"broken","Sun Feb 14 15:29:04 CST 2021","Sun Feb 14 15:29:04 CST 2021","1","cases.system.AF.8041","test_21","TestAllureAC","","","test_allure_30",""
+"broken","Sun Feb 14 15:29:03 CST 2021","Sun Feb 14 15:29:03 CST 2021","1","cases.system.AF.8041","test_21","TestAllureAC","","","测试allure title怎么展示",""
