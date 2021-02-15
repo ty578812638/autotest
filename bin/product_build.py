@@ -6,17 +6,15 @@
 # @Time: 二月 11, 2021
 
 
+cur_path = os.path.abspath(os.path.dirname(__file__))
+project_path = os.path.split(cur_path)[0]
+sys.path.append(project_path)
+
 import os
 import  sys
 import time
 from func import public
 from config import settings
-
-
-cur_path = os.path.abspath(os.path.dirname(__file__))
-project_path = os.path.split(cur_path)[0]
-sys.path.append(project_path)
-
 
 def exe_test_case(case_file_name=''):
     '''
