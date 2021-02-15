@@ -19,12 +19,14 @@ def test_1(data):
 
 @pytest.mark.parametrize('data1,data2',[(2,3),(4,5),(6,7)])
 def test_2(data1,data2):
+    case_data.case_test_record_list.append('3')
     assert data1+data2 > 9
 
 
 @pytest.mark.usefixtures('fun')
 @allure.title('测试usefixtures调用fixture没有返回值')
 def test_3():
+    case_data.case_test_record_list.append('4')
     print('test_3')
 
 
@@ -39,6 +41,7 @@ def test_4(return_func):
 @pytest.mark.usefixtures('global_fun')
 @allure.title('测试调用全局中conftest中的函数')
 def test_5():
+    case_data.case_test_record_list.append('5')
     print('test_5')
 
 

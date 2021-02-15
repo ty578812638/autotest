@@ -14,6 +14,7 @@ from cases.system.AF import case_data
 class TestFixture:
     @pytest.mark.parametrize('parm_func', [2020], indirect=True)
     def test_fix1(self,parm_func):
+        case_data.case_test_record_list.append('1')
         v = parm_func
         case_data.case_test_record_list.append(
             {'case_no': 'F0001', 'case_name': 'test01', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': '实际结果'})
@@ -21,6 +22,7 @@ class TestFixture:
 
     @pytest.mark.parametrize('parm_func', [2020], indirect=True)
     def test_fix1(self, parm_func):
+        case_data.case_test_record_list.append('1')
         case_data.case_test_record_list.append(
             {'case_no': 'F0001', 'case_name': 'test01', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': '实际结果'})
         v = parm_func

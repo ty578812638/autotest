@@ -9,6 +9,7 @@
 
 import os
 import  time
+import json
 import smtplib
 import requests
 from email.header import Header
@@ -109,12 +110,62 @@ class GetCurrentTime:
         return  time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
 
 
+class HandelCaseInfoFile:
+    '''
+    操作用例信息文件，增、删、查
+    '''
+
+    def __init__(self):
+        '''
+        获取用例信息文件路径
+        '''
+        self.test_case_info_data = settings.test_case_info_data
+
+    def record_test_case_info(self,case_info: dict):
+        '''
+        将每个case中的用例信息保存到json文件中，
+        :param case_info:  每个case中的用例信息，字典形式
+        :return:
+        '''
+
+        with open(self.test_case_info_data, 'a') as fw:
+            fw.write(f"""{case_info}\n""")
+
+    def get_test_case_info(self):
+        '''
+        将json文件中的用例信息转换成字典
+        :param case_info_file: 记录测试用例信息文件
+        :return: 字典列表
+        '''
+        case_info_list = []
+
+        with open(self.test_case_info_data, 'r') as fr:
+            case_data = fr.readlines()
+            for data in case_data:
+                data = data.replace("'",'"')
+                js_dt = json.loads(data)
+                js_dt['create_time'] = time.strftime('%Y%m%d%H%M%S')
+                try:
+                    case_info_list.append(js_dt)
+                except:
+                    pass
+            return case_info_list
+
+    def clear_case_info(self):
+        '''
+        清空测试用例信息
+        :return:
+        '''
+        with open(settings.test_case_info_data, 'w') as fw:
+            fw.seek(0)
+            fw.truncate()
+
 def generate_test_report(pid,sys_name):
 
     sys_name = sys_name.replace('\\','_')
 
     #生成测试报告
-    build_report_path = os.path.join(config.report_root_path,'build').replace('\\','/')
+    build_report_path = os.path.join(settings.report_root_path,'build').replace('\\','/')
     if not os.path.exists(build_report_path ):
         os.makedirs(build_report_path)
 
@@ -135,10 +186,10 @@ def generate_test_report(pid,sys_name):
 def get_new_report():
     '''
     获取最新测试报告
-    :return:
+    :return: 最近一次测试报告
     '''
 
-    report_dir = os.path.join(config.base_dir,'report')
+    report_dir = os.path.join(settings.project_root_path,'report')
     report_list = os.listdir(report_dir)
     '''
     1.在存放报告的路径下对报告的更新时间从早到晚进行排序
@@ -178,7 +229,7 @@ def send_email():
         mail_content = MIMEText('related')
 
         # #添加邮件主题
-        mail_content['subject'] = Header(config.mail_info['subject'])
+        mail_content['subject'] = Header(settings.mail_info['subject'])
 
         #添加邮件正文
         mail_content.attach(MIMEText( mail_data,'html','utf-8'))
@@ -187,9 +238,9 @@ def send_email():
         mail_content.attach(mail_attachment)
 
         smtp = smtplib.SMTP()
-        smtp.connect(config.mail_info['connect']['host'],config.mail_info['connect']['port'])
-        smtp.login(config.mail_info['login']['username'],config.mail_info['login']['passwd'])
-        smtp.sendmail(config.mail_info['sender'],config.mail_info['receiver'],mail_content.as_string())
+        smtp.connect(settings.mail_info['connect']['host'],settings.mail_info['connect']['port'])
+        smtp.login(settings.mail_info['login']['username'],settings.mail_info['login']['passwd'])
+        smtp.sendmail(settings.mail_info['sender'],settings.mail_info['receiver'],mail_content.as_string())
         smtp.quit()
 
     except Exception as e:
@@ -199,7 +250,6 @@ def send_email():
 #日志记录
 def log_record(log_title,lineno,log_content):
     '''
-
     :param log_title:  日志标题
     :param log_content: 日志内容
     :return: 日志记录
@@ -213,7 +263,7 @@ def log_record(log_title,lineno,log_content):
     logger.setLevel(settings.log_level)
 
     #添加文件/屏幕日志输出对象
-    log_dir = os.path.join(settings.base_dir, 'logs', 'AutoTest_' + current_format_time.all_number_time() + '.log').replace('\\','/')
+    log_dir = os.path.join(settings.project_root_path, 'logs', 'AutoTest_' + current_format_time.all_number_time() + '.log').replace('\\','/')
     fh = settings.logging.FileHandler(log_dir)
     # sh = config.logging.StreamHandler()
     # sh.setLevel(config.log_level)
@@ -241,23 +291,47 @@ def log_record(log_title,lineno,log_content):
 
 
 
-#调用web服务
-def callback_web_server(case_info:dict):
+#调用web服务,保存测试用例
+def callback_test_case_info(case_info:list):
+    '''
+    所有用例执行完毕后将所有用例信息传给web服务，前端用来展示
+
+    :param case_info: case_info:  每个case中的用例信息，字典形式
+    :return: 回传成功
+    '''
     response = requests.post(
-        url=settings.web_server_host,
+        url=settings.web_server_test_case_host,
         json=case_info,
         headers={
             'Content-Type': 'application/json',
             'charset': 'utf-8'
         }
     )
-    return  response.text
+    # print('上传测试用例:', response.text)
+
+#调用web服务,保存测试报告
+def  callback_test_test_report(test_report):
+    '''
+    :param test_report:  HTML原生测试报告地址
+    :return:
+    '''
+
+    response = requests.post(
+        url=settings.web_server_test_report_host,
+        files= {'test_report':open(test_report,'rb') },
+        # headers={
+        #     'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+        # }
+    )
+    # print('上传测试报告:',response.text)
 
 
 
 
 
 if __name__ == '__main__':
-    pass
+    handel_file = HandelCaseInfoFile()
+    r = handel_file.get_test_case_info()
+    print(r)
 
 

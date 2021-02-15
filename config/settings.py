@@ -31,6 +31,10 @@ product_allure_json_report = os.path.join(report_root_path,'product_report','all
 product_allure_html_report = os.path.join(report_root_path,'product_report','allure','html_report').replace('\\','/')
 product_raw_html_report = os.path.join(report_root_path,'product_report','html').replace('\\','/')
 
+#测试用例信息路径
+test_case_info_data = os.path.join(project_root_path,'data','case_info.json')
+
+
 #web服务器上传测试用例接口地址
 web_server_test_case_host = 'http://192.168.1.4:9000/saveTestInfo/'
 

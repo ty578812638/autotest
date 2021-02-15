@@ -7,7 +7,8 @@
 
 import allure
 from func import public
-from cases.system.AF import case_data
+
+handel_case_file = public.HandelCaseInfoFile()
 
 @allure.story('测试allure场景')
 class TestAllureAC:
@@ -20,14 +21,22 @@ class TestAllureAC:
        except Exception as e:
            test_res = 'Failed'
            act_res = str(e)
+       test_case_info = {
+           'sys_name': 'AD',
+           'ver_no': '8040',
+           'case_name': '用例名称',
+           'case_no': 'test0002',
+           'case_story': '测试场景',
+           'exp_res': '预期结果',
+           'act_res': act_res,
+           'test_res': test_res,
+           'tester': '唐泳',
+       }
+       handel_case_file.record_test_case_info(test_case_info)
 
-       case_data.test_info['case_no'] = 'test0001'
-       case_data.test_info['case_name'] = '用例名称1'
-       case_data.test_info['case_story'] = '测试场景'
-       case_data.test_info['exp_res'] = '预期结果'
-       case_data.test_info['act_res'] =act_res
-       case_data.test_info['test_res'] = test_res
-       public.callback_web_server(case_data.test_info)
+
+
+
 
 
     @allure.severity(allure.severity_level.NORMAL)
@@ -42,14 +51,18 @@ class TestAllureAC:
             test_res = 'Failed'
             act_res = str(e)
 
-        case_data.test_info['case_no'] = 'test0002'
-        case_data.test_info['case_name'] = '用例名称2'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['exp_res'] = '预期结果'
-        case_data.test_info['act_res'] = act_res
-        case_data.test_info['test_res'] = test_res
-        public.callback_web_server(case_data.test_info)
+        test_case_info = {
+            'sys_name':'AD',
+            'ver_no': '8040',
+            'case_name': '用例名称',
+            'case_no': 'test0002',
+            'case_story': '测试场景',
+            'exp_res': '预期结果',
+            'act_res': act_res,
+            'test_res': test_res,
+            'tester': '唐泳',
+        }
+        handel_case_file.record_test_case_info(test_case_info)
 
 
     @allure.severity(allure.severity_level.MINOR)
@@ -63,14 +76,18 @@ class TestAllureAC:
             test_res = 'Failed'
             act_res = str(e)
 
-        case_data.test_info['case_no'] = 'test0003'
-        case_data.test_info['case_name'] = '用例名称3'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['exp_res'] = '预期结果'
-        case_data.test_info['act_res'] = act_res
-        case_data.test_info['test_res'] = test_res
-        public.callback_web_server(case_data.test_info)
+        test_case_info = {
+            'sys_name': 'AD',
+            'ver_no': '8040',
+            'case_name': '用例名称',
+            'case_no': 'test0002',
+            'case_story': '测试场景',
+            'exp_res': '预期结果',
+            'act_res': act_res,
+            'test_res': test_res,
+            'tester': '唐泳',
+        }
+        handel_case_file.record_test_case_info(test_case_info)
 
 
     @allure.severity(allure.severity_level.CRITICAL)
@@ -84,14 +101,18 @@ class TestAllureAC:
             test_res = 'Failed'
             act_res = str(e)
 
-        case_data.test_info['case_no'] = 'test0004'
-        case_data.test_info['case_name'] = '用例名称4'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['exp_res'] = '预期结果'
-        case_data.test_info['act_res'] = act_res
-        case_data.test_info['test_res'] = test_res
-        public.callback_web_server(case_data.test_info)
+        test_case_info = {
+            'sys_name': 'AD',
+            'ver_no': '8040',
+            'case_name': '用例名称',
+            'case_no': 'test0002',
+            'case_story': '测试场景',
+            'exp_res': '预期结果',
+            'act_res': act_res,
+            'test_res': test_res,
+            'tester': '唐泳',
+        }
+        handel_case_file.record_test_case_info(test_case_info)
 
 
     @allure.severity(allure.severity_level.TRIVIAL)
@@ -105,14 +126,18 @@ class TestAllureAC:
             test_res = 'Failed'
             act_res = str(e)
 
-        case_data.test_info['case_no'] = 'test0005'
-        case_data.test_info['case_name'] = '用例名称5'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['exp_res'] = '预期结果'
-        case_data.test_info['act_res'] = act_res
-        case_data.test_info['test_res'] = test_res
-        public.callback_web_server(case_data.test_info)
+        test_case_info = {
+            'sys_name': 'AD',
+            'ver_no': '8040',
+            'case_name': '用例名称',
+            'case_no': 'test0002',
+            'case_story': '测试场景',
+            'exp_res': '预期结果',
+            'act_res': act_res,
+            'test_res': test_res,
+            'tester': '唐泳',
+        }
+        handel_case_file.record_test_case_info(test_case_info)
 
     @allure.severity(allure.severity_level.BLOCKER)
     def test_allure_60(self):
@@ -124,11 +149,15 @@ class TestAllureAC:
             test_res = 'Failed'
             act_res = str(e)
 
-        case_data.test_info['case_no'] = 'test001'
-        case_data.test_info['case_name'] = '用例名称'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['case_story'] = '测试场景'
-        case_data.test_info['exp_res'] = '预期结果'
-        case_data.test_info['act_res'] = act_res
-        case_data.test_info['test_res'] = test_res
-        public.callback_web_server(case_data.test_info)
+        test_case_info = {
+            'sys_name': 'AD',
+            'ver_no': '8040',
+            'case_name': '用例名称',
+            'case_no': 'test0002',
+            'case_story': '测试场景',
+            'exp_res': '预期结果',
+            'act_res': act_res,
+            'test_res': test_res,
+            'tester': '唐泳',
+        }
+        handel_case_file.record_test_case_info(test_case_info)

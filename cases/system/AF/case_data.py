@@ -24,12 +24,12 @@ sys_name = 'AF'
 
 #单个测试用例信息，会在每个测试用例结束后存储最终的测试信息
 test_info = {
-    'case_no': None,          #用例编号
-    'case_name': None,    #用例名称
-    'case_story':None,    #测试 场景
-    'exp_res':None,         #预期结果
-    'act_res':None,         #实际结果
-    'test_res': None,     #测试结果
+    'case_no': '',          #用例编号
+    'case_name': '',    #用例名称
+    'case_story':'',    #测试 场景
+    'exp_res':'',         #预期结果
+    'act_res':'',         #实际结果
+    'test_res': '',     #测试结果
     'tester':tester,
     'ver_no':version_no,
     'sys_name':sys_name
