@@ -5,42 +5,37 @@
 # @Author: TangYong
 # @Time: 二月 11, 2021
 
+
 import os
-import sys
+import  sys
 import time
+
 
 cur_path = os.path.abspath(os.path.dirname(__file__))
 project_path = os.path.split(cur_path)[0]
 sys.path.append(project_path)
 
-
 from func import public
 from config import settings
 
-def exe_test_case(case_file_name=''):
+def exe_test_case(case_file_name):
     '''
-    :param case_file_name:  需要执行的用例文件名称，默认为执行所有用例
+    该文件中的代码只能用于Linux环境上进行生产构建
+    :param case_file_name:  需要执行的用例文件名称
     :return:
     '''
 
     #年月日时分秒时间格式化
     cur_time = time.strftime('%Y%m%d%H%M%S')
 
-    if case_file_name:
+    #执行指定文件中的测试用例
+    case_path = os.path.join(settings.case_root_path,case_file_name).replace('\\','/')
+    case_file_name = case_file_name.replace('\\', '')
 
-        #执行指定文件中的测试用例
-        case_path = os.path.join(settings.case_root_path,case_file_name)
-        case_file_name = case_file_name.replace('\\', '')
+    #测试报告根据执行的文件名命名
+    product_raw_html_report = os.path.join(
+        settings.product_raw_html_report,case_file_name+'_testReport_'+ cur_time+ '.html').replace('\\','/')
 
-        #测试报告根据执行的文件名命名
-        product_raw_html_report = os.path.join(
-            settings.product_raw_html_report,case_file_name+'_testReport_'+ cur_time+ '.html').replace('\\','/')
-
-    else:
-        #执行所有测试用例
-        case_path = settings.case_root_path
-
-        product_raw_html_report =os.path.join(settings.product_raw_html_report,'all_sys_TestReport_'+cur_time+'.html').replace('\\','/')
 
     if not os.path.exists(case_path):
         raise OSError(f'用例路径【{case_path}】不存在' )
@@ -52,7 +47,7 @@ def exe_test_case(case_file_name=''):
     handel_case_file.clear_case_info()
 
     #执行测试用例
-    os.system( f' python3 -m pytest -s -n auto  -v {case_path}  --html={product_raw_html_report} --self-contained-html --alluredir={settings.product_allure_json_report} --clean-alluredir')
+    os.system( f'python3 -m pytest -s -n auto  -v {case_path}  --html={product_raw_html_report} --self-contained-html --alluredir={settings.product_allure_json_report} --clean-alluredir')
 
     #从用例信息中读取用例信息
     case_info_list = handel_case_file.get_test_case_info()
@@ -73,13 +68,11 @@ def exe_test_case(case_file_name=''):
 
 
 if __name__ == '__main__':
-    try:
-        case_path = sys.argv[1]
-    except Exception:
-       case_path =project_path
-
-    exe_test_case()
-
-
+   #sys.argv 从命令行接收1个用例文件名称，如 AF或者AF/8040
+   try:
+        case_file_name = sys.argv[1]
+        exe_test_case(case_file_name)
+   except:
+       raise NameError('需要执行的用例文件名称不能为空,如:AF或者AF\8040')
 
 
