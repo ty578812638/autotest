@@ -10,10 +10,13 @@
 import os
 import  time
 import json
+import logging
 import smtplib
 import requests
 from email.header import Header
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
 
 
 from config import  settings
@@ -112,14 +115,15 @@ class GetCurrentTime:
 
 class HandelCaseInfoFile:
     '''
-    操作用例信息文件，增、删、查
+    操作用例信息文件，增、删、查,临时文件
     '''
 
     def __init__(self):
         '''
-        获取用例信息文件路径
+        获取用例信息文件路径，临时文件的生成
         '''
         self.test_case_info_data = settings.test_case_info_data
+        self.tmp_data_info = settings.tmp_data_info
 
     def record_test_case_info(self,case_info: dict):
         '''
@@ -143,22 +147,55 @@ class HandelCaseInfoFile:
             case_data = fr.readlines()
             for data in case_data:
                 data = data.replace("'",'"')
-                js_dt = json.loads(data)
-                js_dt['create_time'] = time.strftime('%Y%m%d%H%M%S')
                 try:
+                    js_dt = json.loads(data)
+                    js_dt['create_time'] = time.strftime('%Y%m%d%H%M%S')
                     case_info_list.append(js_dt)
                 except:
                     pass
             return case_info_list
 
-    def clear_case_info(self):
+    def record_tmp_data(self,tmp_data:dict):
         '''
-        清空测试用例信息
+        生成临时数据
+        :param tmp_data:  临时数据
         :return:
         '''
-        with open(settings.test_case_info_data, 'w') as fw:
+        with open(self.tmp_data_info, 'a') as fw:
+            fw.write(f"""{tmp_data}\n""")
+
+    def get_tmp_data(self):
+        '''
+        获取临时数据
+        :return: tmp_data
+        '''
+
+        tmp_data_dict = {}
+
+        with open(self.tmp_data_info, 'r') as fr:
+            tmp_data = fr.readlines()
+            for data in tmp_data:
+                data = data.replace("'", '"')
+                try:
+                    js_dt = json.loads(data)
+                    tmp_data_dict.update(js_dt)
+                except:
+                    pass
+            return tmp_data_dict
+
+    def clear_data(self):
+        '''
+        清空数据
+        :return:
+        '''
+        with open(self.test_case_info_data, 'w') as fw:
             fw.seek(0)
             fw.truncate()
+
+        with open(self.tmp_data_info, 'w') as fw:
+            fw.seek(0)
+            fw.truncate()
+
 
 def generate_test_report(pid,sys_name):
 
@@ -183,6 +220,34 @@ def generate_test_report(pid,sys_name):
     return report_info
 
 
+def generate_log_file():
+    '''
+    动态生成日志文件路径
+    :return: log_file_path
+    '''
+
+    #获取临时文件中的系统名称
+    handel_file = HandelCaseInfoFile()
+    tmp_data = handel_file.get_tmp_data()
+    sys_name = tmp_data['sys_name']
+
+    #根据系统名称生成对应的系统日志
+    log_path = settings.log_root_path %sys_name
+
+    log_name =  time.strftime('%Y%m%d') + '_autotest.log'
+
+    log_file_path = os.path.join(log_path,log_name).replace('\\','/')
+
+    if not os.path.exists(log_file_path):
+        cur_path = os.getcwd()
+        os.makedirs(log_path)
+        os.chdir(log_path)
+        with open(log_name,'w'):pass
+        os.chdir(cur_path)
+    print('log_file_path:',log_file_path)
+    return log_file_path
+
+
 def get_new_report():
     '''
     获取最新测试报告
@@ -203,92 +268,79 @@ def get_new_report():
 
     return new_report
 
-#发邮件
-def send_email():
 
-    #获取最新测试报告并打开
-    test_report = get_new_report()
-    if test_report:pass
-    else:
-        return '当前无可用测试报告'
+def send_email(test_report):
+    # 获取临时文件中的系统名称
+    handel_file = HandelCaseInfoFile()
+    tmp_data = handel_file.get_tmp_data()
+    sys_name = tmp_data['sys_name']
 
-    try:
-        with open(test_report,'rb') as fr:
-            mail_data = fr.read()
+    with open(test_report,'rb') as fr:
+        mail_data = fr.read()
 
-        #定义附件的格式
-        mail_attachment = MIMEText(mail_data, 'bases64', 'utf-8')
+    #定义附件的格式
+    mail_attachment = MIMEText(mail_data, 'bases64', 'utf-8')
 
-        # 附件的类型为8进制
-        mail_attachment['Content-Type'] = 'application/octet-stream'
+    # 附件的类型为8进制
+    mail_attachment['Content-Type'] = 'application/octet-stream'
 
-        # 添加附件内容的配置信息
-        mail_attachment['Content-Disposition'] =" attachment;filename='auto_test_report.html' "
+    # 添加附件内容的配置信息
+    mail_attachment['Content-Disposition'] =" attachment;filename='auto_test_report.html' "
 
-        #创建电子邮件对象,related:表示出了可以发送邮件正文以外,还可以携带各种附件
-        mail_content = MIMEText('related')
+    #创建电子邮件对象,related:表示出了可以发送邮件正文以外,还可以携带各种附件
+    # mail_content = MIMEText('related')
+    mail_content =MIMEMultipart('related')
 
-        # #添加邮件主题
-        mail_content['subject'] = Header(settings.mail_info['subject'])
+    # #添加邮件主题
+    mail_content['subject'] = Header(settings.mail_info['subject']%sys_name)
 
-        #添加邮件正文
-        mail_content.attach(MIMEText( mail_data,'html','utf-8'))
+    #添加邮件正文
+    mail_content.attach(MIMEText( mail_data,'html','utf-8'))
 
-        #添加邮件附件
-        mail_content.attach(mail_attachment)
+    #添加邮件附件
+    mail_content.attach(mail_attachment)
 
-        smtp = smtplib.SMTP()
-        smtp.connect(settings.mail_info['connect']['host'],settings.mail_info['connect']['port'])
-        smtp.login(settings.mail_info['login']['username'],settings.mail_info['login']['passwd'])
-        smtp.sendmail(settings.mail_info['sender'],settings.mail_info['receiver'],mail_content.as_string())
-        smtp.quit()
+    # smtp = smtplib.SMTP()
+    smtp = smtplib.SMTP_SSL(settings.mail_info['connect']['host'])
+    smtp.connect(settings.mail_info['connect']['host'],settings.mail_info['connect']['port'])
+    smtp.login(settings.mail_info['login']['username'],settings.mail_info['login']['passwd'])
+    smtp.sendmail(settings.mail_info['sender'],settings.mail_info['receiver'],mail_content.as_string())
 
-    except Exception as e:
-        return e
-
+    smtp.quit()
 
 #日志记录
-def log_record(log_title,lineno,log_content):
+def log_record(line_no=''):
     '''
-    :param log_title:  日志标题
-    :param log_content: 日志内容
-    :return: 日志记录
+    :param line_no: 行号，sys._getframe().f_lineno 获取当前代码行号
+    :return:
     '''
 
-    current_format_time = GetCurrentTime()
-
+    log_file_path = generate_log_file()
 
     #创建loger对象
-    logger = settings.logging.getLogger(log_title)
+    logger = settings.logging.getLogger()
     logger.setLevel(settings.log_level)
 
+
     #添加文件/屏幕日志输出对象
-    log_dir = os.path.join(settings.project_root_path, 'logs', 'AutoTest_' + current_format_time.all_number_time() + '.log').replace('\\','/')
-    fh = settings.logging.FileHandler(log_dir)
-    # sh = config.logging.StreamHandler()
-    # sh.setLevel(config.log_level)
+    fh = logging.FileHandler(log_file_path,mode='a+')
+    sh = logging.StreamHandler()
+    sh.setLevel(settings.log_level)
 
     #设置输出log输出格式
-    formatter = settings.logging.Formatter('%(asctime)s, %(levelname)s, line-' + str(lineno) + ', %(name)s: %(message)s')
+    formatter = logging.Formatter('%(asctime)s, %(levelname)s, line_no-' + str(line_no) + ', %(filename)s: %(message)s')
     fh.setFormatter(formatter)
-    # sh.setFormatter(formatter)
+    sh.setFormatter(formatter)
 
     #输出日志到屏幕和文件中
     logger.addHandler(fh)
-    # logger.addHandler(sh)
+    logger.addHandler(sh)
 
-    # 输出日志的内容
-    logger.debug(log_content)
-    logger.info(log_content)
-    logger.warning(log_content)
-    logger.error(log_content)
-    logger.critical(log_content)
-
+    #移除句柄
     logger.removeFilter(fh)
-    # logger.removeHandler(sh)
+    logger.removeHandler(sh)
 
     return  logger
-
 
 
 #调用web服务,保存测试用例
@@ -329,9 +381,21 @@ def  callback_test_test_report(test_report):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
-    handel_file = HandelCaseInfoFile()
-    r = handel_file.get_test_case_info()
-    print(r)
+    pass
+
+
 
 

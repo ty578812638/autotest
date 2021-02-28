@@ -1,0 +1,356 @@
+{
+  "uid" : "9854e9de5401254c",
+  "name" : "测试allure报告怎么展示附件",
+  "fullName" : "cases.system.AC.test_20.TestAllureAC#test_allure_10",
+  "historyId" : "ac08199c069cab9bace91f9ecbc177de",
+  "time" : {
+    "start" : 1614525532224,
+    "stop" : 1614525532234,
+    "duration" : 10
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 5 == 6\n  +5\n  -6",
+  "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000002024DDF6DD8>\n\n    @allure.tag('唐泳',500236)\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.title('测试allure报告怎么展示附件')\n    def test_allure_10(self):\n       act_res = ''\n       try:\n            assert 5==6\n            act_res = 'passed'\n       except Exception as e:\n            act_res = str(e)\n>           raise e\n\n..\\cases\\system\\AC\\test_20.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <cases.system.AC.test_20.TestAllureAC object at 0x000002024DDF6DD8>\n\n    @allure.tag('唐泳',500236)\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.title('测试allure报告怎么展示附件')\n    def test_allure_10(self):\n       act_res = ''\n       try:\n>           assert 5==6\nE           assert 5 == 6\nE             +5\nE             -6\n\n..\\cases\\system\\AC\\test_20.py:68: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_fail_for_invalid_template_variable",
+    "time" : {
+      "start" : 1614525532219,
+      "stop" : 1614525532220,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "django_test_environment",
+    "time" : {
+      "start" : 1614525532221,
+      "stop" : 1614525532221,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_django_db_marker",
+    "time" : {
+      "start" : 1614525532222,
+      "stop" : 1614525532222,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_template_string_if_invalid_marker",
+    "time" : {
+      "start" : 1614525532222,
+      "stop" : 1614525532222,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_dj_autoclear_mailbox",
+    "time" : {
+      "start" : 1614525532221,
+      "stop" : 1614525532221,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_django_setup_unittest",
+    "time" : {
+      "start" : 1614525532221,
+      "stop" : 1614525532221,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_django_clear_site_cache",
+    "time" : {
+      "start" : 1614525532221,
+      "stop" : 1614525532222,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_live_server_helper",
+    "time" : {
+      "start" : 1614525532222,
+      "stop" : 1614525532222,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_django_set_urlconf",
+    "time" : {
+      "start" : 1614525532222,
+      "stop" : 1614525532222,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "django_db_blocker",
+    "time" : {
+      "start" : 1614525532221,
+      "stop" : 1614525532221,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 5 == 6\n  +5\n  -6",
+    "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000002024DDF6DD8>\n\n    @allure.tag('唐泳',500236)\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.title('测试allure报告怎么展示附件')\n    def test_allure_10(self):\n       act_res = ''\n       try:\n            assert 5==6\n            act_res = 'passed'\n       except Exception as e:\n            act_res = str(e)\n>           raise e\n\n..\\cases\\system\\AC\\test_20.py:72: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <cases.system.AC.test_20.TestAllureAC object at 0x000002024DDF6DD8>\n\n    @allure.tag('唐泳',500236)\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.title('测试allure报告怎么展示附件')\n    def test_allure_10(self):\n       act_res = ''\n       try:\n>           assert 5==6\nE           assert 5 == 6\nE             +5\nE             -6\n\n..\\cases\\system\\AC\\test_20.py:68: AssertionError",
+    "steps" : [ {
+      "name" : "日志记录",
+      "time" : {
+        "start" : 1614525532225,
+        "stop" : 1614525532226,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "请求信息",
+      "time" : {
+        "start" : 1614525532226,
+        "stop" : 1614525532227,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cbb2802ec3948b9e",
+        "name" : "请求接口",
+        "source" : "cbb2802ec3948b9e.attach",
+        "type" : "text/plain",
+        "size" : 1
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "响应信息",
+      "time" : {
+        "start" : 1614525532227,
+        "stop" : 1614525532228,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a7631db2258a206",
+        "name" : "响应信息",
+        "source" : "1a7631db2258a206.attach",
+        "type" : "text/plain",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "日志信息",
+      "time" : {
+        "start" : 1614525532228,
+        "stop" : 1614525532229,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47bde76177bfaa10",
+        "name" : "日志信息",
+        "source" : "47bde76177bfaa10.attach",
+        "type" : "text/plain",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    }, {
+      "name" : "图片",
+      "time" : {
+        "start" : 1614525532229,
+        "stop" : 1614525532234,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1ad160e450810664",
+        "name" : "图片",
+        "source" : "1ad160e450810664.attach",
+        "type" : "image/bmp",
+        "size" : 1018734
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "ad2d471e4b9f735c",
+      "name" : "log",
+      "source" : "ad2d471e4b9f735c.txt",
+      "type" : "text/plain",
+      "size" : 278
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 5
+  },
+  "afterStages" : [ {
+    "name" : "_django_setup_unittest::0",
+    "time" : {
+      "start" : 1614525532450,
+      "stop" : 1614525532450,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "测试allure场景"
+  }, {
+    "name" : "tag",
+    "value" : "唐泳"
+  }, {
+    "name" : "tag",
+    "value" : "500236"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases.system.AC"
+  }, {
+    "name" : "suite",
+    "value" : "test_20"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllureAC"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-H5OTV7O"
+  }, {
+    "name" : "thread",
+    "value" : "7628-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.system.AC.test_20"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "唐泳", "500236" ]
+  },
+  "source" : "9854e9de5401254c.json",
+  "parameterValues" : [ ]
+}

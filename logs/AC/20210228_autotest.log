@@ -1,0 +1,80 @@
+2021-02-28 14:21:35,694, INFO, line_no-110, test_20.py: test_allure_1:999
+2021-02-28 14:21:35,735, INFO, line_no-110, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:21:35,735, INFO, line_no-128, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:21:35,735, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:21:35,822, INFO, line_no-110, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:21:35,822, INFO, line_no-128, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:21:35,822, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:21:35,822, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:22:20,266, INFO, line_no-110, test_20.py: test_allure_1:999
+2021-02-28 14:22:20,267, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 14:22:20,307, INFO, line_no-110, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:22:20,307, INFO, line_no-128, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:22:20,307, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:22:20,396, INFO, line_no-110, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:22:20,396, INFO, line_no-128, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:22:20,396, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:22:20,396, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:23:29,366, INFO, line_no-110, test_20.py: test_allure_1:999
+2021-02-28 14:23:29,367, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 14:23:29,409, INFO, line_no-110, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:23:29,409, INFO, line_no-128, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:23:29,409, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:23:29,499, INFO, line_no-110, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:23:29,499, INFO, line_no-128, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:23:29,499, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:23:29,499, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:29:08,086, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 14:29:08,087, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 14:29:08,127, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:29:08,127, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:29:08,127, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:29:08,213, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:29:08,213, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:29:08,213, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:29:08,213, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:30:19,840, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 14:30:19,841, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 14:30:19,881, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:30:19,881, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:30:19,881, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 14:30:19,966, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:30:19,966, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:30:19,966, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 14:30:19,966, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:13:55,036, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 23:13:55,037, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 23:13:55,079, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:13:55,079, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:13:55,079, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:13:55,171, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:13:55,171, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:13:55,171, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:13:55,171, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:16:41,409, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 23:16:41,410, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 23:16:41,450, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:16:41,450, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:16:41,450, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:16:41,543, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:16:41,543, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:16:41,543, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:16:41,543, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:18,487, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 23:18:18,488, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 23:18:18,536, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:18,536, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:18,536, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:18,635, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:18,635, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:18,635, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:18,635, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:52,224, INFO, line_no-108, test_20.py: test_allure_1:999
+2021-02-28 23:18:52,225, INFO, line_no-88, test_20.py: test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}
+2021-02-28 23:18:52,266, INFO, line_no-108, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:52,266, INFO, line_no-126, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:52,266, INFO, line_no-53, test_20.py: {'username': 'name1', 'pwd': 'pwd1'}
+2021-02-28 23:18:52,361, INFO, line_no-108, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:52,361, INFO, line_no-126, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:52,361, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}
+2021-02-28 23:18:52,361, INFO, line_no-53, test_20.py: {'username': 'name2', 'pwd': 'pwd2'}

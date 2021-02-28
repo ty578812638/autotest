@@ -1,0 +1,304 @@
+{
+  "uid" : "ca4e5ce773790488",
+  "name" : "前后置测试返回值测试",
+  "fullName" : "cases.system.AC.test_20.TestAllureAC#test_allure_50",
+  "historyId" : "a7326bc26d01495d738f7c1d8cf51e35",
+  "time" : {
+    "start" : 1614481386197,
+    "stop" : 1614481386200,
+    "duration" : 3
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 5 == 8\n  +5\n  -8",
+  "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000001C654690048>\nup_teardown_ret_val = 5\n\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.title('前后置测试返回值测试')\n    def test_allure_50(self,up_teardown_ret_val):\n        with allure.step('前后置函数直接调方式测试'):\n            allure.attach(body='前后置测试', name='前后置测试')\n>           assert up_teardown_ret_val == 8\nE           assert 5 == 8\nE             +5\nE             -8\n\n..\\cases\\system\\AC\\test_20.py:152: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_django_set_urlconf",
+    "time" : {
+      "start" : 1614481386188,
+      "stop" : 1614481386188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_template_string_if_invalid_marker",
+    "time" : {
+      "start" : 1614481386189,
+      "stop" : 1614481386189,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_live_server_helper",
+    "time" : {
+      "start" : 1614481386188,
+      "stop" : 1614481386188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_clear_site_cache",
+    "time" : {
+      "start" : 1614481386187,
+      "stop" : 1614481386187,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_db_marker",
+    "time" : {
+      "start" : 1614481386188,
+      "stop" : 1614481386188,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "django_test_environment",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_setup_unittest",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_fail_for_invalid_template_variable",
+    "time" : {
+      "start" : 1614481386059,
+      "stop" : 1614481386059,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_dj_autoclear_mailbox",
+    "time" : {
+      "start" : 1614481386187,
+      "stop" : 1614481386187,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "django_db_blocker",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "up_teardown_ret_val",
+    "time" : {
+      "start" : 1614481386189,
+      "stop" : 1614481386195,
+      "duration" : 6
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "up_teardown_ret_val",
+      "time" : {
+        "start" : 1614481386189,
+        "stop" : 1614481386195,
+        "duration" : 6
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bc485189e2d6581b",
+        "name" : "附件名称",
+        "source" : "bc485189e2d6581b.attach",
+        "type" : "text/plain",
+        "size" : 6
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 5 == 8\n  +5\n  -8",
+    "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000001C654690048>\nup_teardown_ret_val = 5\n\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.title('前后置测试返回值测试')\n    def test_allure_50(self,up_teardown_ret_val):\n        with allure.step('前后置函数直接调方式测试'):\n            allure.attach(body='前后置测试', name='前后置测试')\n>           assert up_teardown_ret_val == 8\nE           assert 5 == 8\nE             +5\nE             -8\n\n..\\cases\\system\\AC\\test_20.py:152: AssertionError",
+    "steps" : [ {
+      "name" : "前后置函数直接调方式测试",
+      "time" : {
+        "start" : 1614481386198,
+        "stop" : 1614481386199,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 5 == 8\n  +5\n  -8\n",
+      "statusTrace" : "  File \"D:\\project\\autotest\\cases\\system\\AC\\test_20.py\", line 152, in test_allure_50\n    assert up_teardown_ret_val == 8\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "734cbcb9a94c8327",
+        "name" : "前后置测试",
+        "source" : "734cbcb9a94c8327.attach",
+        "type" : "text/plain",
+        "size" : 15
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_django_setup_unittest::0",
+    "time" : {
+      "start" : 1614481386281,
+      "stop" : 1614481386281,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "测试allure场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases.system.AC"
+  }, {
+    "name" : "suite",
+    "value" : "test_20"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllureAC"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-H5OTV7O"
+  }, {
+    "name" : "thread",
+    "value" : "10840-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.system.AC.test_20"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ca4e5ce773790488.json",
+  "parameterValues" : [ ]
+}

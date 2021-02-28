@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_20.py:88 test_allure_1:{'sys_name': 'AD', 'ver_no': '8040', 'case_name': '用例名称', 'case_no': 'test0002', 'case_story': '测试场景', 'exp_res': '预期结果', 'act_res': 'assert 5 == 6\n  +5\n  -6', 'test_res': 'Failed', 'tester': '唐泳'}

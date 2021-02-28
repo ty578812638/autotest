@@ -1,0 +1,313 @@
+{
+  "uid" : "b9be1accd091e702",
+  "name" : "test_allure_60[up_teardown_par1]",
+  "fullName" : "cases.system.AC.test_20.TestAllureAC#test_allure_60",
+  "historyId" : "f1559759d6c73beeb72e9ceccb0d57d7",
+  "time" : {
+    "start" : 1614481386209,
+    "stop" : 1614481386211,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert {'pwd': 'pwd2...ame': 'name2'} == 9\n  +{'username': 'name2', 'pwd': 'pwd2'}\n  -9",
+  "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000001C1F241D080>\nup_teardown_par = {'pwd': 'pwd2', 'username': 'name2'}\n\n    @pytest.mark.parametrize('up_teardown_par',data,indirect=True )\n    @allure.severity(allure.severity_level.BLOCKER)\n    def test_allure_60(self,up_teardown_par):\n        val = up_teardown_par\n        with allure.step('前后置函数传参测试'):\n            allure.attach(body='前后置函数传参测试', name='前后置函数传参测试')\n>           assert val == 9\nE           AssertionError: assert {'pwd': 'pwd2...ame': 'name2'} == 9\nE             +{'username': 'name2', 'pwd': 'pwd2'}\nE             -9\n\n..\\cases\\system\\AC\\test_20.py:165: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_django_set_urlconf",
+    "time" : {
+      "start" : 1614481386205,
+      "stop" : 1614481386205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_template_string_if_invalid_marker",
+    "time" : {
+      "start" : 1614481386205,
+      "stop" : 1614481386205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "up_teardown_par",
+    "time" : {
+      "start" : 1614481386205,
+      "stop" : 1614481386208,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "fixture参数测试",
+      "time" : {
+        "start" : 1614481386205,
+        "stop" : 1614481386208,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6543fde87048cb8e",
+        "name" : "参数名称",
+        "source" : "6543fde87048cb8e.attach",
+        "type" : "text/plain",
+        "size" : 12
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_setup_unittest",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_db_marker",
+    "time" : {
+      "start" : 1614481386204,
+      "stop" : 1614481386204,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_dj_autoclear_mailbox",
+    "time" : {
+      "start" : 1614481386204,
+      "stop" : 1614481386204,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_django_clear_site_cache",
+    "time" : {
+      "start" : 1614481386204,
+      "stop" : 1614481386204,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "django_test_environment",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_fail_for_invalid_template_variable",
+    "time" : {
+      "start" : 1614481386059,
+      "stop" : 1614481386059,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "django_db_blocker",
+    "time" : {
+      "start" : 1614481386060,
+      "stop" : 1614481386060,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_live_server_helper",
+    "time" : {
+      "start" : 1614481386205,
+      "stop" : 1614481386205,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert {'pwd': 'pwd2...ame': 'name2'} == 9\n  +{'username': 'name2', 'pwd': 'pwd2'}\n  -9",
+    "statusTrace" : "self = <cases.system.AC.test_20.TestAllureAC object at 0x000001C1F241D080>\nup_teardown_par = {'pwd': 'pwd2', 'username': 'name2'}\n\n    @pytest.mark.parametrize('up_teardown_par',data,indirect=True )\n    @allure.severity(allure.severity_level.BLOCKER)\n    def test_allure_60(self,up_teardown_par):\n        val = up_teardown_par\n        with allure.step('前后置函数传参测试'):\n            allure.attach(body='前后置函数传参测试', name='前后置函数传参测试')\n>           assert val == 9\nE           AssertionError: assert {'pwd': 'pwd2...ame': 'name2'} == 9\nE             +{'username': 'name2', 'pwd': 'pwd2'}\nE             -9\n\n..\\cases\\system\\AC\\test_20.py:165: AssertionError",
+    "steps" : [ {
+      "name" : "前后置函数传参测试",
+      "time" : {
+        "start" : 1614481386210,
+        "stop" : 1614481386211,
+        "duration" : 1
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert {'pwd': 'pwd2...ame': 'name2'} == 9\n  +{'username': 'name2', 'pwd': 'pwd2'}\n  -9\n",
+      "statusTrace" : "  File \"D:\\project\\autotest\\cases\\system\\AC\\test_20.py\", line 165, in test_allure_60\n    assert val == 9\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e95dbdbf6915366c",
+        "name" : "前后置函数传参测试",
+        "source" : "e95dbdbf6915366c.attach",
+        "type" : "text/plain",
+        "size" : 27
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "d7ed31624851f8e1",
+      "name" : "log",
+      "source" : "d7ed31624851f8e1.txt",
+      "type" : "text/plain",
+      "size" : 73
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "_django_setup_unittest::0",
+    "time" : {
+      "start" : 1614481386306,
+      "stop" : 1614481386306,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试allure场景"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases.system.AC"
+  }, {
+    "name" : "suite",
+    "value" : "test_20"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllureAC"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-H5OTV7O"
+  }, {
+    "name" : "thread",
+    "value" : "14284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.system.AC.test_20"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "up_teardown_par",
+    "value" : "{'username': 'name2', 'pwd': 'pwd2'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b9be1accd091e702.json",
+  "parameterValues" : [ "{'username': 'name2', 'pwd': 'pwd2'}" ]
+}

@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "eeeb6bf6fc4b4516b0ee2885be8f5d46",
+    "name" : "cases.system.AC",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 18,
+      "unknown" : 0,
+      "total" : 24
+    }
+  } ]
+}

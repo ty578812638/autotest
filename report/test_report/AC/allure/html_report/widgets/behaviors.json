@@ -1,0 +1,26 @@
+{
+  "total" : 13,
+  "items" : [ {
+    "uid" : "5751fd8f9af923f98d7a0cc493a87011",
+    "name" : "测试allure场景",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 12
+    }
+  }, {
+    "uid" : "ea0693c02e18c4cf82112877b33e6c55",
+    "name" : "资源管理模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

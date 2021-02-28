@@ -1,0 +1,26 @@
+{
+  "total" : 14,
+  "items" : [ {
+    "uid" : "5751fd8f9af923f98d7a0cc493a87011",
+    "name" : "测试allure场景",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 4,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 11
+    }
+  }, {
+    "uid" : "941ce418ab4841aaded2b6bf0ed47430",
+    "name" : "测试fixture的参数化",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

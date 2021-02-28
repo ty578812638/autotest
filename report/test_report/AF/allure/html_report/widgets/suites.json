@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "01fd406e19a270d341569e8de21f5373",
+    "name" : "cases.system.AF.8040",
+    "statistic" : {
+      "failed" : 6,
+      "broken" : 4,
+      "skipped" : 1,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 18
+    }
+  }, {
+    "uid" : "9f5dcc5cf28321906d0bbaaff7b81d0a",
+    "name" : "cases.system.AF.8041",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  } ]
+}

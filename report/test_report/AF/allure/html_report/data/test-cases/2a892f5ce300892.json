@@ -1,0 +1,347 @@
+{
+  "uid" : "2a892f5ce300892",
+  "name" : "测试allure title怎么展示",
+  "fullName" : "cases.system.AF.8040.test_allure.TestAllure#test_allure_1",
+  "historyId" : "e23c0a93fd17a439a4aa361295e29382",
+  "time" : {
+    "start" : 1614493647907,
+    "stop" : 1614493647919,
+    "duration" : 12
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 5 == 6\n  +5\n  -6",
+  "statusTrace" : "self = <test_allure.TestAllure object at 0x000001CE8AE745C0>\n\n    @allure.title('测试allure title怎么展示')\n    def test_allure_1(self):\n        act_res = ''\n        try:\n            assert 5 == 6\n            act_res = 'passed'\n        except Exception as e:\n            act_res = str(e)\n>           raise e\n\n..\\cases\\system\\AF\\8040\\test_allure.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <test_allure.TestAllure object at 0x000001CE8AE745C0>\n\n    @allure.title('测试allure title怎么展示')\n    def test_allure_1(self):\n        act_res = ''\n        try:\n>           assert 5 == 6\nE           assert 5 == 6\nE             +5\nE             -6\n\n..\\cases\\system\\AF\\8040\\test_allure.py:21: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_django_setup_unittest",
+    "time" : {
+      "start" : 1614493647904,
+      "stop" : 1614493647905,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_live_server_helper",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_template_string_if_invalid_marker",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_clear_site_cache",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "django_db_blocker",
+    "time" : {
+      "start" : 1614493647904,
+      "stop" : 1614493647904,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "django_test_environment",
+    "time" : {
+      "start" : 1614493647904,
+      "stop" : 1614493647904,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_set_urlconf",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_db_marker",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_fail_for_invalid_template_variable",
+    "time" : {
+      "start" : 1614493647904,
+      "stop" : 1614493647904,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_dj_autoclear_mailbox",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 5 == 6\n  +5\n  -6",
+    "statusTrace" : "self = <test_allure.TestAllure object at 0x000001CE8AE745C0>\n\n    @allure.title('测试allure title怎么展示')\n    def test_allure_1(self):\n        act_res = ''\n        try:\n            assert 5 == 6\n            act_res = 'passed'\n        except Exception as e:\n            act_res = str(e)\n>           raise e\n\n..\\cases\\system\\AF\\8040\\test_allure.py:25: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <test_allure.TestAllure object at 0x000001CE8AE745C0>\n\n    @allure.title('测试allure title怎么展示')\n    def test_allure_1(self):\n        act_res = ''\n        try:\n>           assert 5 == 6\nE           assert 5 == 6\nE             +5\nE             -6\n\n..\\cases\\system\\AF\\8040\\test_allure.py:21: AssertionError",
+    "steps" : [ {
+      "name" : "日志记录",
+      "time" : {
+        "start" : 1614493647908,
+        "stop" : 1614493647911,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "请求信息",
+      "time" : {
+        "start" : 1614493647911,
+        "stop" : 1614493647912,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e5fe1ec5a591a9a8",
+        "name" : "请求接口",
+        "source" : "e5fe1ec5a591a9a8.attach",
+        "type" : "text/plain",
+        "size" : 1
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "响应信息",
+      "time" : {
+        "start" : 1614493647912,
+        "stop" : 1614493647913,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "57f7ce925531d058",
+        "name" : "响应信息",
+        "source" : "57f7ce925531d058.attach",
+        "type" : "text/plain",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "日志信息",
+      "time" : {
+        "start" : 1614493647914,
+        "stop" : 1614493647915,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ad88e0fe39fb6c74",
+        "name" : "日志信息",
+        "source" : "ad88e0fe39fb6c74.attach",
+        "type" : "text/plain",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "图片",
+      "time" : {
+        "start" : 1614493647915,
+        "stop" : 1614493647919,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d6341edd04e1d13f",
+        "name" : "图片",
+        "source" : "d6341edd04e1d13f.attach",
+        "type" : "image/bmp",
+        "size" : 1018734
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "eaab61c90db8c342",
+      "name" : "log",
+      "source" : "eaab61c90db8c342.txt",
+      "type" : "text/plain",
+      "size" : 282
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_django_setup_unittest::0",
+    "time" : {
+      "start" : 1614493648046,
+      "stop" : 1614493648046,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试allure场景"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases.system.AF.8040"
+  }, {
+    "name" : "suite",
+    "value" : "test_allure"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllure"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-H5OTV7O"
+  }, {
+    "name" : "thread",
+    "value" : "13228-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.system.AF.8040.test_allure"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2a892f5ce300892.json",
+  "parameterValues" : [ ]
+}

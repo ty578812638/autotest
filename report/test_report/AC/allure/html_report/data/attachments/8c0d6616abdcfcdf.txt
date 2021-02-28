@@ -1,0 +1,1 @@
+[32mINFO    [0m root:test_20.py:53 {'username': 'name2', 'pwd': 'pwd2'}

@@ -1,0 +1,241 @@
+[ {
+  "uid" : "9c192ed620c5385d",
+  "name" : "test_20",
+  "time" : {
+    "start" : 1614481386407,
+    "stop" : 1614481386407,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd54bf4a71cf181b",
+  "name" : "test_3[6]",
+  "time" : {
+    "start" : 1614481386373,
+    "stop" : 1614481386373,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5af7ae8331768096",
+  "name" : "test_allure_60[up_teardown_par0]",
+  "time" : {
+    "start" : 1614481386104,
+    "stop" : 1614481386106,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "a75a6b4d39455749",
+  "name" : "单个参数测试",
+  "time" : {
+    "start" : 1614481386242,
+    "stop" : 1614481386244,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "7f8a43454ef9e5f7",
+  "name" : "test_allure_20",
+  "time" : {
+    "start" : 1614481386062,
+    "stop" : 1614481386065,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e751f7a4ed8add2f",
+  "name" : "test_30",
+  "time" : {
+    "start" : 1614481386425,
+    "stop" : 1614481386425,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2056a70f9f3009cd",
+  "name" : "test_10",
+  "time" : {
+    "start" : 1614481386401,
+    "stop" : 1614481386402,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "792c115e555066f5",
+  "name" : "test_1",
+  "time" : {
+    "start" : 1614481386328,
+    "stop" : 1614481386328,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2b9cca2722fe48cf",
+  "name" : "test_dome_10",
+  "time" : {
+    "start" : 1614481386315,
+    "stop" : 1614481386316,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4bad99010e3125a1",
+  "name" : "test_dome_20",
+  "time" : {
+    "start" : 1614481386290,
+    "stop" : 1614481386290,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4429d948c5bbdabf",
+  "name" : "测试allure报告怎么展示附件",
+  "time" : {
+    "start" : 1614481386062,
+    "stop" : 1614481386073,
+    "duration" : 11
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "39462f19672baa6f",
+  "name" : "多个参数测试",
+  "time" : {
+    "start" : 1614481386234,
+    "stop" : 1614481386236,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "edf347faa4ab0bb8",
+  "name" : "多个参数测试",
+  "time" : {
+    "start" : 1614481386293,
+    "stop" : 1614481386294,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "5a67ae355f971f61",
+  "name" : "test_2",
+  "time" : {
+    "start" : 1614481386334,
+    "stop" : 1614481386334,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33f12eee504aaddc",
+  "name" : "多个参数测试",
+  "time" : {
+    "start" : 1614481386266,
+    "stop" : 1614481386268,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "25a6319103bc303e",
+  "name" : "test_1_1",
+  "time" : {
+    "start" : 1614481386384,
+    "stop" : 1614481386384,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b9be1accd091e702",
+  "name" : "test_allure_60[up_teardown_par1]",
+  "time" : {
+    "start" : 1614481386209,
+    "stop" : 1614481386211,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "35c35890417f4117",
+  "name" : "test_dome_30",
+  "time" : {
+    "start" : 1614481386309,
+    "stop" : 1614481386309,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a53fb2eda4e349f1",
+  "name" : "前后置测试",
+  "time" : {
+    "start" : 1614481386159,
+    "stop" : 1614481386160,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "ca4e5ce773790488",
+  "name" : "前后置测试返回值测试",
+  "time" : {
+    "start" : 1614481386197,
+    "stop" : 1614481386200,
+    "duration" : 3
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "26d41d1aee479745",
+  "name" : "前后置测试",
+  "time" : {
+    "start" : 1614481386083,
+    "stop" : 1614481386085,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9607df79caa80324",
+  "name" : "test_3[5]",
+  "time" : {
+    "start" : 1614481386359,
+    "stop" : 1614481386359,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "974bd5cb4d8298eb",
+  "name" : "单个参数测试",
+  "time" : {
+    "start" : 1614481386264,
+    "stop" : 1614481386265,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "severity" : "blocker"
+}, {
+  "uid" : "6424980673e0da42",
+  "name" : "test_3[4]",
+  "time" : {
+    "start" : 1614481386349,
+    "stop" : 1614481386349,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

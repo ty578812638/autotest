@@ -1,0 +1,345 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "cases.system.AF",
+    "children" : [ {
+      "name" : "8040",
+      "children" : [ {
+        "name" : "test_allure",
+        "children" : [ {
+          "name" : "测试allure title怎么展示",
+          "uid" : "2a892f5ce300892",
+          "parentUid" : "e8c928e8f1b4b5fb797646faa652a179",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493647907,
+            "stop" : 1614493647919,
+            "duration" : 12
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_allure_2",
+          "uid" : "8cc281153832a667",
+          "parentUid" : "e8c928e8f1b4b5fb797646faa652a179",
+          "status" : "broken",
+          "time" : {
+            "start" : 1614493647908,
+            "stop" : 1614493647909,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_allure_4",
+          "uid" : "dc6cbce31938514a",
+          "parentUid" : "e8c928e8f1b4b5fb797646faa652a179",
+          "status" : "broken",
+          "time" : {
+            "start" : 1614493647990,
+            "stop" : 1614493647991,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_allure_3",
+          "uid" : "92ab648ee8e41758",
+          "parentUid" : "e8c928e8f1b4b5fb797646faa652a179",
+          "status" : "broken",
+          "time" : {
+            "start" : 1614493647991,
+            "stop" : 1614493647992,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_allure_5",
+          "uid" : "9a899c9895ccdaeb",
+          "parentUid" : "e8c928e8f1b4b5fb797646faa652a179",
+          "status" : "broken",
+          "time" : {
+            "start" : 1614493648023,
+            "stop" : 1614493648024,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e8c928e8f1b4b5fb797646faa652a179"
+      }, {
+        "name" : "test_fixture",
+        "children" : [ {
+          "name" : "test_fix1[2020]",
+          "uid" : "3229427139ea6f39",
+          "parentUid" : "59e8d805ce370b69b96a019f3d927ce0",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493648018,
+            "stop" : 1614493648019,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "2020" ]
+        } ],
+        "uid" : "59e8d805ce370b69b96a019f3d927ce0"
+      }, {
+        "name" : "test_param",
+        "children" : [ {
+          "name" : "test_1[1]",
+          "uid" : "cce93b556c1b3986",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493648045,
+            "stop" : 1614493648045,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "1" ]
+        }, {
+          "name" : "test_2[2-3]",
+          "uid" : "7d064268f04e2c8a",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493648055,
+            "stop" : 1614493648055,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "2", "3" ]
+        }, {
+          "name" : "test_1[2]",
+          "uid" : "cd2c354172a5bf61",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493648071,
+            "stop" : 1614493648072,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "2" ]
+        }, {
+          "name" : "test_2[4-5]",
+          "uid" : "dc0be68376beaa31",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "failed",
+          "time" : {
+            "start" : 1614493648084,
+            "stop" : 1614493648084,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "4", "5" ]
+        }, {
+          "name" : "test_1[3]",
+          "uid" : "5875275b17aa2d3",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648099,
+            "stop" : 1614493648100,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "3" ]
+        }, {
+          "name" : "test_2[6-7]",
+          "uid" : "a341d18fe2edac8f",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648112,
+            "stop" : 1614493648112,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "6", "7" ]
+        }, {
+          "name" : "测试parametrize调用fixture有返回值",
+          "uid" : "8f6bf96971876cb0",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1614493648115,
+            "stop" : 1614493648115,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "<NotSetType.token: 0>" ]
+        }, {
+          "name" : "测试调用全局中conftest中的函数",
+          "uid" : "dc1cfe290aa5ffd0",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648125,
+            "stop" : 1614493648126,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "测试usefixtures调用fixture没有返回值",
+          "uid" : "30ee697a425d7718",
+          "parentUid" : "7a95445f7db93e45ef6c8a6b3b6639fc",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648132,
+            "stop" : 1614493648133,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "7a95445f7db93e45ef6c8a6b3b6639fc"
+      }, {
+        "name" : "test_skip",
+        "children" : [ {
+          "name" : "测试skip",
+          "uid" : "13448bc8553b2c9c",
+          "parentUid" : "72e4524140a75fc081d8cfd53090302b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648146,
+            "stop" : 1614493648147,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_B",
+          "uid" : "f5984c10e995759c",
+          "parentUid" : "72e4524140a75fc081d8cfd53090302b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648153,
+            "stop" : 1614493648154,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_C",
+          "uid" : "aae6e38dab7140db",
+          "parentUid" : "72e4524140a75fc081d8cfd53090302b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1614493648165,
+            "stop" : 1614493648166,
+            "duration" : 1
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "72e4524140a75fc081d8cfd53090302b"
+      } ],
+      "uid" : "ea0018f7174849f897d0de6faba0c4a7"
+    }, {
+      "name" : "8041.test_21",
+      "children" : [ {
+        "name" : "测试allure title怎么展示",
+        "uid" : "1e9e771d4c9b0858",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648173,
+          "stop" : 1614493648174,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_20",
+        "uid" : "2bcb5b68c8757c3a",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648187,
+          "stop" : 1614493648189,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_30",
+        "uid" : "c9c580b559bd4abf",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648192,
+          "stop" : 1614493648193,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_40",
+        "uid" : "78d1cbccab45aeb5",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648207,
+          "stop" : 1614493648208,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_50",
+        "uid" : "6bdcfaf1afaa88b3",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648210,
+          "stop" : 1614493648211,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_allure_60",
+        "uid" : "d1887877bc28e524",
+        "parentUid" : "c4c41dc78691b9da4c32aae0980297d6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1614493648225,
+          "stop" : 1614493648226,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8041.test_21"
+    } ],
+    "uid" : "cases.system.AF"
+  } ]
+}

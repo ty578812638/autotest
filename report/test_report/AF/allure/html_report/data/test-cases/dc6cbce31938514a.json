@@ -1,0 +1,239 @@
+{
+  "uid" : "dc6cbce31938514a",
+  "name" : "test_allure_4",
+  "fullName" : "cases.system.AF.8040.test_allure.TestAllure#test_allure_4",
+  "historyId" : "9e0e582375a18f30ad68df3b5c1c5486",
+  "time" : {
+    "start" : 1614493647990,
+    "stop" : 1614493647991,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: module 'func.public' has no attribute 'logger_record'",
+  "statusTrace" : "self = <test_allure.TestAllure object at 0x00000247A59B0860>\n\n    @allure.severity(allure.severity_level.TRIVIAL)\n    @allure.tag('12345678','TANGYONG')\n    def test_allure_4(self):\n        print('ok5')\n        try:\n            assert 5 == 5\n            test_res = 'Passed'\n            act_res = '实际结果'\n        except Exception as e:\n            test_res = 'Failed'\n            act_res = str(e)\n    \n        try:\n            assert 5 == 5\n            test_res = 'Passed'\n            act_res = '实际结果'\n        except Exception as e:\n            test_res = 'Failed'\n            act_res = str(e)\n        test_case_info = {\n            'sys_name': 'AC',\n            'ver_no': '8040',\n            'case_name': '用例名称',\n            'case_no': 'test1003',\n            'case_story': '测试场景',\n            'exp_res': '预期结果',\n            'act_res': act_res,\n            'test_res': test_res,\n            'tester': '唐泳',\n        }\n        handel_case_file.record_test_case_info(test_case_info)\n>       public.logger_record(sys._getframe().f_lineno).info(f'test_allure_1:{test_case_info}')\nE       AttributeError: module 'func.public' has no attribute 'logger_record'\n\n..\\cases\\system\\AF\\8040\\test_allure.py:188: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_fail_for_invalid_template_variable",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_set_urlconf",
+    "time" : {
+      "start" : 1614493647988,
+      "stop" : 1614493647988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "django_test_environment",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_setup_unittest",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_db_marker",
+    "time" : {
+      "start" : 1614493647988,
+      "stop" : 1614493647988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_template_string_if_invalid_marker",
+    "time" : {
+      "start" : 1614493647989,
+      "stop" : 1614493647989,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_live_server_helper",
+    "time" : {
+      "start" : 1614493647988,
+      "stop" : 1614493647988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_django_clear_site_cache",
+    "time" : {
+      "start" : 1614493647988,
+      "stop" : 1614493647988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_dj_autoclear_mailbox",
+    "time" : {
+      "start" : 1614493647988,
+      "stop" : 1614493647988,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "django_db_blocker",
+    "time" : {
+      "start" : 1614493647905,
+      "stop" : 1614493647905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_django_setup_unittest::0",
+    "time" : {
+      "start" : 1614493648007,
+      "stop" : 1614493648008,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试allure场景"
+  }, {
+    "name" : "tag",
+    "value" : "12345678"
+  }, {
+    "name" : "tag",
+    "value" : "TANGYONG"
+  }, {
+    "name" : "severity",
+    "value" : "trivial"
+  }, {
+    "name" : "parentSuite",
+    "value" : "cases.system.AF.8040"
+  }, {
+    "name" : "suite",
+    "value" : "test_allure"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAllure"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-H5OTV7O"
+  }, {
+    "name" : "thread",
+    "value" : "11816-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "cases.system.AF.8040.test_allure"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "trivial",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TANGYONG", "12345678" ]
+  },
+  "source" : "dc6cbce31938514a.json",
+  "parameterValues" : [ ]
+}

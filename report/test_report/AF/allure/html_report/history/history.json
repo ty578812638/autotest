@@ -1,0 +1,469 @@
+{
+  "3d5f0c3dbb56617ae6a046cce44aa939" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e9e771d4c9b0858",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648173,
+        "stop" : 1614493648174,
+        "duration" : 1
+      }
+    } ]
+  },
+  "4a9b60ed4c8f5ffaf08787cb9844fef3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8cc281153832a667",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'func.public' has no attribute 'logger_record'",
+      "time" : {
+        "start" : 1614493647908,
+        "stop" : 1614493647909,
+        "duration" : 1
+      }
+    } ]
+  },
+  "ffe470f7cb55c2f663255980e18a30a5" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3229427139ea6f39",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2020 == '2021'\n  +2020\n  -'2021'",
+      "time" : {
+        "start" : 1614493648018,
+        "stop" : 1614493648019,
+        "duration" : 1
+      }
+    } ]
+  },
+  "22340be729e3807381108087d6a1598e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "30ee697a425d7718",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648132,
+        "stop" : 1614493648133,
+        "duration" : 1
+      }
+    } ]
+  },
+  "869ce982efac40a12bc236225afea2f3" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cce93b556c1b3986",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 1 > 2",
+      "time" : {
+        "start" : 1614493648045,
+        "stop" : 1614493648045,
+        "duration" : 0
+      }
+    } ]
+  },
+  "9e0e582375a18f30ad68df3b5c1c5486" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc6cbce31938514a",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'func.public' has no attribute 'logger_record'",
+      "time" : {
+        "start" : 1614493647990,
+        "stop" : 1614493647991,
+        "duration" : 1
+      }
+    } ]
+  },
+  "afaff902947b17f67b4006c40db2a846" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9a899c9895ccdaeb",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'func.public' has no attribute 'logger_record'",
+      "time" : {
+        "start" : 1614493648023,
+        "stop" : 1614493648024,
+        "duration" : 1
+      }
+    } ]
+  },
+  "76370dec8467703cb20ac71244306bd1" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a341d18fe2edac8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648112,
+        "stop" : 1614493648112,
+        "duration" : 0
+      }
+    } ]
+  },
+  "04e48aa4c97dfb61908758ff9d24672b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8f6bf96971876cb0",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: got empty parameter set ['return_func'], function test_4 at D:\\autotest\\cases\\system\\AF\\8040\\test_param.py:32",
+      "time" : {
+        "start" : 1614493648115,
+        "stop" : 1614493648115,
+        "duration" : 0
+      }
+    } ]
+  },
+  "47143857b42c80d65c1c2b6df72dcd9c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "13448bc8553b2c9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648146,
+        "stop" : 1614493648147,
+        "duration" : 1
+      }
+    } ]
+  },
+  "c4c9adcfa9f6449843b951f112427701" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "78d1cbccab45aeb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648207,
+        "stop" : 1614493648208,
+        "duration" : 1
+      }
+    } ]
+  },
+  "868a813272257b42e08e8cea1a91d6fd" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cd2c354172a5bf61",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 2 > 2",
+      "time" : {
+        "start" : 1614493648071,
+        "stop" : 1614493648072,
+        "duration" : 1
+      }
+    } ]
+  },
+  "69f45c796beb1ed6210f90e3e6ac965e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2bcb5b68c8757c3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648187,
+        "stop" : 1614493648189,
+        "duration" : 2
+      }
+    } ]
+  },
+  "0134f84ae910d11f0f64ae6fd6dd3494" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c9c580b559bd4abf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648192,
+        "stop" : 1614493648193,
+        "duration" : 1
+      }
+    } ]
+  },
+  "38864164dda67aac168c4ac61dd7aa61" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5875275b17aa2d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648099,
+        "stop" : 1614493648100,
+        "duration" : 1
+      }
+    } ]
+  },
+  "e23c0a93fd17a439a4aa361295e29382" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "2a892f5ce300892",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 5 == 6\n  +5\n  -6",
+      "time" : {
+        "start" : 1614493647907,
+        "stop" : 1614493647919,
+        "duration" : 12
+      }
+    } ]
+  },
+  "10d056ce283d650a6306adc9e01abfe1" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d064268f04e2c8a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (2 + 3) > 9",
+      "time" : {
+        "start" : 1614493648055,
+        "stop" : 1614493648055,
+        "duration" : 0
+      }
+    } ]
+  },
+  "65d38cce5fad730360f2095f04d074c5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6bdcfaf1afaa88b3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648210,
+        "stop" : 1614493648211,
+        "duration" : 1
+      }
+    } ]
+  },
+  "99087c6fab61b583376f56e0d6eae486" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "92ab648ee8e41758",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: module 'func.public' has no attribute 'logger_record'",
+      "time" : {
+        "start" : 1614493647991,
+        "stop" : 1614493647992,
+        "duration" : 1
+      }
+    } ]
+  },
+  "29345e4cf8033c625e70f9aa13d9118a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d1887877bc28e524",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648225,
+        "stop" : 1614493648226,
+        "duration" : 1
+      }
+    } ]
+  },
+  "5511c6fdfc0ee8ce66be30ccfb066c84" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc0be68376beaa31",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert (4 + 5) > 9",
+      "time" : {
+        "start" : 1614493648084,
+        "stop" : 1614493648084,
+        "duration" : 0
+      }
+    } ]
+  },
+  "7ecae61bf4559b12b6f57763c96f9ee5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f5984c10e995759c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648153,
+        "stop" : 1614493648154,
+        "duration" : 1
+      }
+    } ]
+  },
+  "490ff0647340cb27ca65349134599a63" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aae6e38dab7140db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648165,
+        "stop" : 1614493648166,
+        "duration" : 1
+      }
+    } ]
+  },
+  "25534e8ccf9b02047e8d1f865ed93b33" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dc1cfe290aa5ffd0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1614493648125,
+        "stop" : 1614493648126,
+        "duration" : 1
+      }
+    } ]
+  }
+}
